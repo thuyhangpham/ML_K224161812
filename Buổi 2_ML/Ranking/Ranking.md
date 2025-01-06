@@ -6,7 +6,9 @@
 - Có ba phương pháp chính trong Ranking, được phân biệt dựa trên cách tổ chức dữ liệu đầu vào và mục tiêu học tập: **Pointwise**,** Pairwise**, và **Listwise**.
 
 # 1. Phương pháp Pointwise
+
 _**Khái niệm**_
+
 Phương pháp Pointwise xem xếp hạng là một bài toán dự đoán điểm số của từng item một cách độc lập. Mỗi item được xử lý riêng lẻ mà không quan tâm đến mối quan hệ giữa các item khác trong tập dữ liệu.
 
 _**Đặc điểm**_
