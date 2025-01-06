@@ -1,4 +1,4 @@
-**Bài toán xếp hạng (Ranking) trong Machine Learning**
+#**Bài toán xếp hạng (Ranking) trong Machine Learning**
 
 Ranking (Xếp hạng) trong Machine Learning là một kỹ thuật được sử dụng để sắp xếp các đối tượng (items) theo một thứ tự ưu tiên hoặc độ liên quan dựa trên một tập hợp tiêu chí hoặc đặc tính cụ thể. Ranking rất quan trọng trong các hệ thống như công cụ tìm kiếm, gợi ý sản phẩm, hệ thống đánh giá và xếp hạng nội dung.
 Mục tiêu của các thuật toán Ranking là tối ưu hóa thứ tự của các đối tượng sao cho thứ tự này phù hợp nhất với nhu cầu hoặc mong muốn của người dùng. Để đạt được điều đó, các thuật toán thường sử dụng dữ liệu huấn luyện từ các nguồn như hành vi người dùng, đánh giá hoặc điểm số thực tế.
