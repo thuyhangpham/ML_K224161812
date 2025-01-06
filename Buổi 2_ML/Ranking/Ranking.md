@@ -1,11 +1,11 @@
 # Bài toán xếp hạng (Ranking) trong Machine Learning
 
-**Giới thiệu về Ranking trong Machine Learning**
+# Giới thiệu về Ranking trong Machine Learning**
 - Ranking (Xếp hạng) trong Machine Learning là một kỹ thuật được sử dụng để sắp xếp các đối tượng (items) theo một thứ tự ưu tiên hoặc độ liên quan dựa trên một tập hợp tiêu chí hoặc đặc tính cụ thể. Ranking rất quan trọng trong các hệ thống như công cụ tìm kiếm, gợi ý sản phẩm, hệ thống đánh giá và xếp hạng nội dung.
 - Mục tiêu của các thuật toán Ranking là tối ưu hóa thứ tự của các đối tượng sao cho thứ tự này phù hợp nhất với nhu cầu hoặc mong muốn của người dùng. Để đạt được điều đó, các thuật toán thường sử dụng dữ liệu huấn luyện từ các nguồn như hành vi người dùng, đánh giá hoặc điểm số thực tế.
 - Có ba phương pháp chính trong Ranking, được phân biệt dựa trên cách tổ chức dữ liệu đầu vào và mục tiêu học tập: Pointwise, Pairwise, và Listwise.
 
-**1. Phương pháp Pointwise**
+# 1. Phương pháp Pointwise
 _**Khái niệm**_
 Phương pháp Pointwise xem xếp hạng là một bài toán dự đoán điểm số của từng item một cách độc lập. Mỗi item được xử lý riêng lẻ mà không quan tâm đến mối quan hệ giữa các item khác trong tập dữ liệu.
 
@@ -25,10 +25,8 @@ _**Nhược điểm**_
   
 _Ví dụ: Dự đoán điểm số của bài viết trong một cuộc thi dựa trên tiêu chí đánh giá; Xếp hạng mức độ yêu thích của người dùng đối với từng bộ phim._
 
-_**Trường hợp sử dụng**_
-Hệ thống đánh giá đơn giản (Ví dụ như dự đoán điểm số trong bài kiểm tra hoặc xếp hạng sản phẩm dựa trên số sao).
 
-**2. Phương pháp Pairwise**
+# 2. Phương pháp Pairwise
 _**Khái niệm**_
 Phương pháp Pairwise tập trung vào so sánh các cặp item. Thay vì dự đoán điểm số, phương pháp này học cách xếp hạng ưu tiên giữa hai item bất kỳ.
 
@@ -47,26 +45,24 @@ _**Nhược điểm**_
 
 _Ví dụ: So sánh hai tài liệu trong một công cụ tìm kiếm để xác định tài liệu nào nên xuất hiện trước._
 
-_**Trường hợp sử dụng**_
-Công cụ tìm kiếm như Google RankNet hoặc Hệ thống đề xuất nội dung (ví dụ: Spotify hoặc Netflix) cần dựa trên mối quan hệ giữa các item.
 
-**3. Phương pháp Listwise**
+#3. Phương pháp Listwise
 _**Khái niệm**_
 Phương pháp Listwise xử lý toàn bộ danh sách item cùng một lúc. Nó tập trung vào tối ưu hóa thứ tự xếp hạng tổng thể thay vì chỉ dự đoán điểm số hoặc so sánh các cặp.
 
 _**Đặc điểm**_
-Đầu vào: Một danh sách các item, với thứ tự thực tế hoặc điểm số liên quan.
-Đầu ra: Thứ tự dự đoán của toàn bộ danh sách.
-Hàm lỗi (Loss Function): Các hàm tối ưu dựa trên các thước đo như NDCG (Normalized Discounted Cumulative Gain) hoặc MAP (Mean Average Precision).
-Ưu điểm
-Tối ưu hóa toàn diện thứ tự xếp hạng của danh sách.
-Hiệu quả cho các bài toán xếp hạng phức tạp, yêu cầu thứ tự chính xác giữa nhiều item.
-Nhược điểm
-Yêu cầu tài nguyên tính toán lớn hơn Pointwise và Pairwise.
-Phụ thuộc vào chất lượng và đầy đủ của dữ liệu.
-Ví dụ
-Xếp hạng các kết quả tìm kiếm trên Google dựa trên mức độ liên quan.
-Gợi ý danh sách sản phẩm tối ưu trên Amazon hoặc các nền tảng thương mại điện tử.
-Trường hợp sử dụng
-Công cụ tìm kiếm hiện đại (như Google và Bing).
-Hệ thống gợi ý đa mục tiêu, chẳng hạn như YouTube hoặc Amazon.
+- Input: Một danh sách các item, với thứ tự thực tế hoặc điểm số liên quan.
+- Output: Thứ tự dự đoán của toàn bộ danh sách.
+- Loss Function: Các hàm tối ưu dựa trên các thước đo như NDCG (Normalized Discounted Cumulative Gain) hoặc MAP (Mean Average Precision).
+
+_**Ưu điểm**_
+- Tối ưu hóa toàn diện thứ tự xếp hạng của danh sách.
+- Hiệu quả cho các bài toán xếp hạng phức tạp, yêu cầu thứ tự chính xác giữa nhiều item.
+
+_**Nhược điểm**_
+- Yêu cầu tài nguyên tính toán lớn hơn Pointwise và Pairwise.
+- Phụ thuộc vào chất lượng và đầy đủ của dữ liệu.
+
+_Ví dụ_: _Xếp hạng các kết quả tìm kiếm trên Google dựa trên mức độ liên quan; Gợi ý danh sách sản phẩm tối ưu trên Amazon hoặc các nền tảng thương mại điện tử._
+
+--> Việc lựa chọn phương pháp phụ thuộc vào yêu cầu cụ thể của hệ thống hoặc yêu cầu của bài toán xếp hạng, tài nguyên tính toán và dữ liệu có sẵn. Trong thực tế, các công cụ hiện đại như công cụ tìm kiếm và hệ thống gợi ý thường sử dụng phương pháp Listwise để đạt được hiệu quả tốt nhất.
