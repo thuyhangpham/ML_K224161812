@@ -3,7 +3,7 @@
 # Giới thiệu về Ranking trong Machine Learning
 - **Ranking (Xếp hạng)** trong Machine Learning là một kỹ thuật được sử dụng để sắp xếp các đối tượng (items) theo một thứ tự ưu tiên hoặc độ liên quan dựa trên một tập hợp tiêu chí hoặc đặc tính cụ thể. Ranking rất quan trọng trong các hệ thống như công cụ tìm kiếm, gợi ý sản phẩm, hệ thống đánh giá và xếp hạng nội dung.
 - Mục tiêu của các thuật toán Ranking là tối ưu hóa thứ tự của các đối tượng sao cho thứ tự này phù hợp nhất với nhu cầu hoặc mong muốn của người dùng. Để đạt được điều đó, các thuật toán thường sử dụng dữ liệu huấn luyện từ các nguồn như hành vi người dùng, đánh giá hoặc điểm số thực tế.
-- Có ba phương pháp chính trong Ranking, được phân biệt dựa trên cách tổ chức dữ liệu đầu vào và mục tiêu học tập: **Pointwise**,** Pairwise**, và **Listwise**.
+- Có ba phương pháp chính trong Ranking, được phân biệt dựa trên cách tổ chức dữ liệu đầu vào và mục tiêu học tập: **Pointwise**,**Pairwise** và **Listwise**.
 
 # 1. Phương pháp Pointwise
 
@@ -29,7 +29,9 @@ _Ví dụ: Dự đoán điểm số của bài viết trong một cuộc thi d�
 
 
 # 2. Phương pháp Pairwise
+
 _**Khái niệm**_
+
 Phương pháp Pairwise tập trung vào so sánh các cặp item. Thay vì dự đoán điểm số, phương pháp này học cách xếp hạng ưu tiên giữa hai item bất kỳ.
 
 _**Đặc điểm**_
@@ -48,8 +50,10 @@ _**Nhược điểm**_
 _Ví dụ: So sánh hai tài liệu trong một công cụ tìm kiếm để xác định tài liệu nào nên xuất hiện trước._
 
 
-#3. Phương pháp Listwise
+# 3. Phương pháp Listwise
+
 _**Khái niệm**_
+
 Phương pháp Listwise xử lý toàn bộ danh sách item cùng một lúc. Nó tập trung vào tối ưu hóa thứ tự xếp hạng tổng thể thay vì chỉ dự đoán điểm số hoặc so sánh các cặp.
 
 _**Đặc điểm**_
